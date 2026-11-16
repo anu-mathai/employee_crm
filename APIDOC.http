@@ -1,0 +1,42 @@
+#api call for listing
+###
+GET http://127.0.0.1:8000/employee/
+Accept: application/json
+
+#api call for inserting a record
+###
+POST http://127.0.0.1:8000/employee/
+Content-Type: application/json
+
+{
+    "name":"haridk",
+    "email":"haridk@gmail.com",
+    "department":"hr",
+    "salary":55000,
+    "location":"tcr"
+
+}
+
+#api call for reterieving data
+###
+GET http://127.0.0.1:8000/employee/2/
+Accept: application/json
+
+#api call to update record
+###
+
+PUT http://127.0.0.1:8000/employee/1/ 
+Content-Type: application/json
+
+{
+    
+    "name":"hari",
+    "email":"hari@gmail.com",
+    "department":"hr",
+    "salary":65000,
+    "location":"tcr"
+}
+
+###
+DELETE http://127.0.0.1:8000/employee/1/ 
+Accept: application/json
